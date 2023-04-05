@@ -13,26 +13,25 @@
 \setlength{\parskip}{0.05in}
 
 % Edit these as appropriate
-\newcommand\course{CS1420}
-\newcommand\semester{Spring 2023}            % <-- current semester
-\newcommand\hwnumber{1}                    % <-- homework number
-\newcommand\pbnumber{1}                    % <-- problem number
-\newcommand\BannerID{B01326006}           % <-- Your Banner ID!
+\newcommand\logina{syamamo1}   
+\newcommand\loginb{ADD LOGIN HERE}           % <-- Your Banner ID!
 
 \pagestyle{fancyplain}
 \headheight 35pt
-\lhead{\BannerID}
-\chead{\textbf{\Large Homework \hwnumber}}
-\rhead{\course\;--\;\semester \\ \today}
+\lhead{\logina \\ \loginb}
 \lfoot{}
 \cfoot{}
 \rfoot{\small\thepage}
 \headsep 1.5em
+\chead{\textbf{\Large Ad Exchange Lab}}
+
 
 \begin{document}
 
-\section*{Ad Exchange Algorithm}
-Our strategy is to calculate a ratio that we shade our bids by (bid = ratio * 1.0). 
+\section*{Bid Calculation}
+Our bid strategy is to calculate a ratio that we shade our bids by (bid = ratio * 1.0). 
+We bid this value on all segments that are subsets of our segment and bid 0 on
+all other segments. 
 We split the market segments into two different classes based on if they have
 2 specifying attributes (Female HighIncome) or 3 (Female Young HighIncome).
 For both the 2 and 3 attribute segments, ratio is calculated using:
@@ -50,6 +49,7 @@ $n_{pos}$ is the amount of users in the segments that our segment is a subset of
 This is the amount of users we can possibly win and the more there is, the more
 supply and the less we have to bid. 
 
+\section*{Spending Limit Calculation}
 For spending limit, we alter our strategy for the 2 attribute and 3 attribute 
 segments. We will show the 3 attribute equation first as it is simpler.
 For the 3 attribute segments, we calculate spending limit using:

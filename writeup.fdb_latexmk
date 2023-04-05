@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1680715090 "/Users/seanyamamoto/workspace2/algo_gt/lab08/src/main/java/lab08/writeup.tex" "writeup.pdf" "writeup" 1680715090
-  "/Users/seanyamamoto/workspace2/algo_gt/lab08/src/main/java/lab08/writeup.tex" 1680715090 3264 9f23d15744aab20dacee4224e3b638f2 ""
+["pdflatex"] 1680716025 "/Users/seanyamamoto/workspace2/algo_gt/lab08/src/main/java/lab08/writeup.tex" "writeup.pdf" "writeup" 1680716025
+  "/Users/seanyamamoto/workspace2/algo_gt/lab08/src/main/java/lab08/writeup.tex" 1680716025 3177 ead76ad8dfe5b150c79017d2349541f7 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -18,6 +18,7 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsl12.tfm" 1136768653 1504 f280e6069e577ca4a981806c471fe65c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
@@ -67,8 +68,8 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649834181 2826443 f99750b637cd84a644dfa28df95fd33b ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "writeup.aux" 1680715090 114 9cc71f9e8b170749f2b4e9ffdfa8362a "pdflatex"
-  "writeup.tex" 1680715090 3264 9f23d15744aab20dacee4224e3b638f2 ""
+  "writeup.aux" 1680716025 114 9cc71f9e8b170749f2b4e9ffdfa8362a "pdflatex"
+  "writeup.tex" 1680716025 3177 ead76ad8dfe5b150c79017d2349541f7 ""
   (generated)
   "writeup.aux"
   "writeup.log"
