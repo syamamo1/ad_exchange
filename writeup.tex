@@ -1,0 +1,73 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+%% download this package and put it in the same directory as this file
+%\usepackage{clrscode3e}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% Edit these as appropriate
+\newcommand\course{CS1420}
+\newcommand\semester{Spring 2023}            % <-- current semester
+\newcommand\hwnumber{1}                    % <-- homework number
+\newcommand\pbnumber{1}                    % <-- problem number
+\newcommand\BannerID{B01326006}           % <-- Your Banner ID!
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\BannerID}
+\chead{\textbf{\Large Homework \hwnumber}}
+\rhead{\course\;--\;\semester \\ \today}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+\begin{document}
+
+\section*{Ad Exchange Algorithm}
+Our strategy is to calculate a ratio that we shade our bids by (bid = ratio * 1.0). 
+We split the market segments into two different classes based on if they have
+2 specifying attributes (Female HighIncome) or 3 (Female Young HighIncome).
+For both the 2 and 3 attribute segments, ratio is calculated using:
+
+$$r=\frac{9}{20}\cdot \frac{n_{sub}}{n_{pos}}$$
+
+9 is the number of competitors so we need to bid more when there is more
+competition. 20 is the number of total classes. The more classes, the less
+we have to bid because there's a lesser chance the competition will bid 
+on the users we bid for. $n_{sub}$ is the amount of users that belong to 
+one of the 2 or 3-attribute segments that are subsets of our segment. This number
+measures how many options other bidders with overlapping segments have. If
+they have more options, we don't have to bid as much as there is more supply. 
+$n_{pos}$ is the amount of users in the segments that our segment is a subset of. 
+This is the amount of users we can possibly win and the more there is, the more
+supply and the less we have to bid. 
+
+For spending limit, we alter our strategy for the 2 attribute and 3 attribute 
+segments. We will show the 3 attribute equation first as it is simpler.
+For the 3 attribute segments, we calculate spending limit using:
+
+$$L_3 = 0.9\cdot r\cdot b$$
+
+Here $b$ is the campaign budget. We multiply by our ratio $r$ because we 
+know the maximum we will spend is $r\cdot b$. We also multiply by 0.9 
+because we are participating in a second price auction and we assume for each
+client we win, we pay 90\% of our bid. This way, we aren't spending money on
+users when we have already attained our reach. For the 2 attribute segments we use:
+
+$$L_2 = 0.9\cdot r\cdot \frac{n_{here}}{n_{pos}}\cdot b$$
+
+The only thing we changed here is we set the limit for each segment equal to
+the fraction of users in the current segment and the total possible users
+we can bid on: $\frac{n_{here}}{n_{pos}}$. We don't consider the delta coefficient because it doesn't affect our demand for the user.
+Our spending limit is already set up such that we don't buy too many users so our bid is 
+solely determined by the level of competition and the supply for the user. 
+
+\end{document}
